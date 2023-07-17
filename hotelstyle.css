@@ -10383,7 +10383,7 @@ body {
 }
 
 #home {
-  background: url(../img/mountians.jpg) bottom center/cover no-repeat;
+  background: url(./bg.jpg) bottom center/cover no-repeat;
   min-height: 750px;
   color: white;
 }
