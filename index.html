@@ -11,6 +11,8 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
   </head>
   <body>
     <script
@@ -69,15 +71,26 @@
                     </div>
                     </div>
                     <div class="row">
+                     
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="accept" checked>
                         <label class="form-check-label" for="accept">Accept</label>
+                        <button type="button" class="btn btn-primary">Reservation</button>
                     </div>
-                    <div class="py-3 px-2">
-                        <button type="button" id="submit" class="btn btn-primary">Reservation</button>
-                        <button type="button" id="tour" class="btn btn-info" data-toggle="modal" data-target="#tour">Virtual Tour</button>
+                    <div class="row">
+                      <div class="col-auto">
+
+
+                        <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Launch demo modal
+                  </button>
+
+      </div>
+    </div>
+                  
                     </div>
-                    </div>
+               
                      </form>               
                  </div>
             </div>   
@@ -105,6 +118,7 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
                   </li>
+                
                 </ul>
            
               </div>
@@ -178,12 +192,8 @@
                           <button type="button" class="btn btn-lg btn-info" data-bs-toggle="popover" title="Appartman" data-bs-content="Voluptate ex atque minima esse provident, aperiam assumenda reiciendis dignissimos sunt aliquid voluptas eos repellendus obcaecati quod.">More</button>
                         </div>
                       </div>
-
                 </div>
-
             </div>
-            
-
         </div>
 
     </section>
@@ -247,18 +257,48 @@
     </section>
 
 
+  
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
+ 
 
 <script language="JavaScript">
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   return new bootstrap.Popover(popoverTriggerEl)
 })
-    </script>
+</script>
 
 
   </div>
+
+  <script>
+    $(document).ready(function(){
+      $("#exampleModal").click(function(){
+        $("#exampleModal").modal();
+      });
+    });
+    </script>
   </body>
 </html>
