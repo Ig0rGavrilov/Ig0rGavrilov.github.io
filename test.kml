@@ -21,8 +21,6 @@
       </outerBoundaryIs>
     </Polygon>
   </Placemark>
-
-
    <Placemark>
     <Style>
       <PolyStyle>
@@ -43,5 +41,5 @@
       </outerBoundaryIs>
     </Polygon>
   </Placemark>
-  
+
 </kml>
