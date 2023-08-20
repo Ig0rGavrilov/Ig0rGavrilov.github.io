@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">  
   <Placemark>
-<Style>
+    <Style>
       <PolyStyle>
         <color>ff0000ff</color> <!-- This is the color in ABGR format (blue) -->
       </PolyStyle>
@@ -30,16 +30,14 @@
       <outerBoundaryIs>
         <LinearRing>
           <coordinates>
-          16.612312, 49.198815
-          16.612312, 50.198815
-          17.612312, 50.198815
-          17.612312, 49.198815
-          16.612312, 49.198815
-            
+          16.612312, 49.198815, 0.0
+          16.612312, 50.198815, 0.0
+          17.612312, 50.198815, 0.0
+          17.612312, 49.198815, 0.0
+          16.612312, 49.198815, 0.0            
           </coordinates>
         </LinearRing>
       </outerBoundaryIs>
     </Polygon>
   </Placemark>
-
 </kml>
